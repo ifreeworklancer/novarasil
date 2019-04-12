@@ -76,6 +76,11 @@ footer {
     z-index: 3;
 }
 
+.top-section .page-description {
+    color: #63CB4D;
+    font-style: italic;
+}
+
 .top-section .subtitle {
 
     li {
@@ -91,13 +96,13 @@ footer {
             transform: translateY(-50%);
             background-size: contain;
             background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
         }
 
         &:nth-child(1) {
 
             &::before {
-                width: 15px;
-                height: 15px;
                 background-image: url('../images/icons/skyline.svg');
             }
         }
@@ -105,8 +110,6 @@ footer {
         &:nth-child(2) {
 
             &::before {
-                width: 15px;
-                height: 15px;
                 background-image: url('../images/icons/stress.svg');
             }
         }
@@ -114,9 +117,14 @@ footer {
         &:nth-child(3) {
 
             &::before {
-                width: 15px;
-                height: 15px;
                 background-image: url('../images/icons/fast-food.svg');
+            }
+        }
+
+        &:nth-child(4) {
+
+            &::before {
+                background-image: url('../images/icons/champagne-glass.svg');
             }
         }
     }
@@ -190,8 +198,51 @@ footer {
     line-height: 1.33;
 }
 
+.composition-section .item .title .text-small {
+    font-size: 14px;
+}
+
 .composition-section .description {
     margin-top: 60px;
+
+    li {
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 10px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:nth-child(1) {
+
+            &::before {
+                background-image: url('../images/icons/clock.svg');
+            }
+        }
+
+        &:nth-child(2) {
+
+            &::before {
+                background-image: url('../images/icons/cheap.svg');
+            }
+        }
+
+        &:nth-child(3) {
+
+            &::before {
+                background-image: url('../images/icons/liver.svg');
+            }
+        }
+    }
 }
 
 /*
